@@ -1,0 +1,110 @@
+# ===================================================
+# 🌐 Acheive App .gitignore
+# Tech stack: React Native, Firebase/Supabase, LLMs
+# ===================================================
+
+# -------------------------------
+# 🔧 Node / React Native
+# -------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Metro / Watchman / Expo
+.expo/
+.expo-shared/
+*.expo
+.watchmanconfig
+
+# Build artifacts
+dist/
+build/
+web-build/
+*.tar.gz
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+*.apk
+*.aar
+*.iml
+*.keystore
+
+# iOS
+ios/Pods/
+ios/DerivedData/
+ios/build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.xcuserstate
+*.xcworkspace
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcuserdatad/
+*.xcuserdata/
+
+# -------------------------------
+# 🔐 Secrets / API Keys / Env
+# -------------------------------
+.env
+.env.*
+*.secret
+*.key
+*.pem
+*.p12
+*.jks
+api_keys.json
+openai_key.txt
+
+# -------------------------------
+# 🔥 Firebase / Supabase
+# -------------------------------
+.firebase/
+firestore-debug.log
+firebase-debug.log
+functions/node_modules/
+.supabase/
+
+# -------------------------------
+# 📂 Development / IDE
+# -------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# -------------------------------
+# 💻 OS / Misc Files
+# -------------------------------
+.DS_Store
+Thumbs.db
+*.log
+
+# -------------------------------
+# 🧠 LLM / AI Models (if local)
+# -------------------------------
+*.ckpt
+*.pt
+*.pth
+*.weights
+*.bin
+*.onnx
+
+# -------------------------------
+# 🎨 Figma / Design Assets
+# (optional – only ignore if not needed)
+# -------------------------------
+*.fig
+*.xd
+design_assets/
+
+# -------------------------------
+# 📓 Jupyter / Prompt Notebooks
+# -------------------------------
+*.ipynb_checkpoints/
