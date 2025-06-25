@@ -1,0 +1,12 @@
+# Core dependencies
+langchain>=0.1.17
+langchain-openai>=0.1.6
+pydantic>=2.0
+python-dotenv>=1.0.1
+
+# Optional: for terminal interface or tool integrations later
+tavily-search>=0.3.1  # Only needed if you plan to use Tavily
+openai>=1.30.1        # Explicit OpenAI client (used by langchain-openai)
+
+# If using specific LangChain tool sets
+langchain-community>=0.0.25  # Useful for extra tools

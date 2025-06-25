@@ -1,39 +1,70 @@
-# 🧭 Acheive
+Achieve — AI Learning Coach
+Achieve is a Python-based AI-powered coaching assistant that helps users master any skill or goal by generating personalized weekly roadmaps, assignments, and curated resources. It uses OpenAI's GPT models and LangChain to guide users through structured, trackable learning plans.
 
-*A guided goal-setting and life coaching app with journaling as a secondary tool for personal growth.*
+FEATURES:
 
-Acheive is a personal coaching app designed to help users reach their goals through structured roadmaps, smart scheduling, and tailored assignments. Whether you want to learn a new skill, build better habits, or transform your life, Acheive provides you with a step-by-step framework and a supportive system to get there. 
+Personalized goal planning with structured weekly checkpoints
 
-Journaling and reflection features are available to enhance self-awareness, but the core experience is built around consistent action and guided progress.
+Resource-rich assignments (videos, articles, courses)
 
----
+Time-based planning based on user input (skill level, daily time, duration)
 
-## 🚧 Project Status
+Success criteria and progress tracking metrics
 
-This project is in early development. We're currently:
+Built using LangChain, Pydantic, and OpenAI's GPT models
 
-- 📐 Designing the roadmap and user flow
-- ⚙️ Building the backend with Firebase/Supabase
-- 🛠️ Developing the mobile app using React Native
-- 🧠 Exploring LLMs to generate adaptive coaching prompts
+REQUIREMENTS:
 
----
+Python 3.10+
 
-## 📌 Goals for v1
+OpenAI API key
 
-- Goal creation and planning flow
-- Assignment and deadline scheduler
-- Basic journaling interface
-- Mood tracking and progress visualization
-- AI-powered coaching prompt system
+Libraries: langchain, langchain-openai, pydantic, dotenv, etc.
 
----
+Install dependencies:
+pip install -r requirements.txt
 
-## 📂 Tech Stack
+GETTING STARTED:
 
-- **Frontend**: React Native (Expo)
-- **Backend**: Firebase or Supabase
-- **AI Integration**: LLM APIs (OpenAI, etc.)
-- **Design**: Figma
+Clone the repo:
+git clone https://github.com/yourusername/achieve.git
+cd achieve
 
----
+Create a .env file in the root directory and add your OpenAI key:
+OPENAI_API_KEY=your-api-key-here
+
+Run the program:
+python main.py
+
+Follow the prompts to generate a personalized learning roadmap.
+
+TECH STACK:
+
+LangChain — for orchestrating LLM workflows
+
+OpenAI GPT-4o-mini — LLM engine
+
+Pydantic — for strict data structure parsing and validation
+
+dotenv — environment variable management
+
+JSON — data persistence
+
+OUTPUT:
+Each user interaction generates a structured roadmap file saved as:
+data/user_roadmap.json
+
+UPCOMING FEATURES:
+
+Tool integrations like Tavily to find relevant online tutorials and articles
+
+Personalized memory and learning rate adaptation
+
+Progress tracking dashboard or app UI
+
+Export roadmap to calendar or to-do managers
+
+LICENSE:
+MIT License. See LICENSE file for details.
+
+Made with 🧠 by Evan Blunt
